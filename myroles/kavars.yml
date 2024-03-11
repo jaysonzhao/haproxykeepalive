@@ -1,0 +1,15 @@
+---
+lb:
+  ipaddr: 192.168.44.250
+  netif: "ens192"
+
+high_availability:
+  helpernodes:
+    - name: "web1"
+      ipaddr: "192.168.44.13"
+      state: MASTER
+      priority: 100
+    - name: "web2"
+      ipaddr: "192.168.44.17"
+      state: BACKUP
+      priority: 90

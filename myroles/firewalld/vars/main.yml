@@ -1,0 +1,3 @@
+---
+firewalld_package_name: firewalld
+firewalld_service_name: firewalld

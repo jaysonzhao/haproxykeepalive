@@ -1,0 +1,9 @@
+---
+- name: Apply roles to host groups
+  hosts: lb:webservers
+  become: true
+  roles:
+    - myapache
+    - myloadbalancer
+    - mykeepalive
+

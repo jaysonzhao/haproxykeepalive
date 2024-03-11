@@ -1,0 +1,8 @@
+---
+firewalld_package_state: present
+
+firewalld_service_state: started
+firewalld_service_enabled: yes
+
+firewalld_default_interface: "{{ ansible_default_ipv4.interface }}"
+firewalld_default_zone: public
